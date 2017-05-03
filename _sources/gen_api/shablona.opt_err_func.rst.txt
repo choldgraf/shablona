@@ -1,0 +1,12 @@
+shablona.opt_err_func
+=====================
+
+.. currentmodule:: shablona
+
+.. autofunction:: opt_err_func
+
+.. include:: shablona.opt_err_func.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>

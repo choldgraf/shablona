@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>shablona.Model &#8212; shablona 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API" href="../api.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="shablona-model">
+<h1>shablona.Model<a class="headerlink" href="#shablona-model" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="shablona.Model">
+<em class="property">class </em><code class="descclassname">shablona.</code><code class="descname">Model</code><span class="sig-paren">(</span><em>func=&lt;function cumgauss&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#shablona.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for fitting cumulative Gaussian functions to data</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#shablona.Model.fit" title="shablona.Model.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(x,&nbsp;y[,&nbsp;initial])</td>
+<td>Fit a Model to data.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="shablona.Model.__hash__">
+<code class="descname">__hash__</code><a class="headerlink" href="#shablona.Model.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return hash(self).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="shablona.Model.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>x, y, initial=[0.5, 1]</em><span class="sig-paren">)</span><a class="headerlink" href="#shablona.Model.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit a Model to data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : float or array</p>
+<blockquote>
+<div><p>The independent variable: contrast values presented in the
+experiment</p>
+</div></blockquote>
+<p><strong>y</strong> : float or array</p>
+<blockquote>
+<div><p>The dependent variable</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>fit</strong> : <code class="xref py py-class docutils literal"><span class="pre">Fit</span></code> instance</p>
+<blockquote class="last">
+<div><p>A <code class="xref py py-class docutils literal"><span class="pre">Fit</span></code> object that contains the parameters of the model.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="examples-using-shablona-model">
+<h2>Examples using <code class="docutils literal"><span class="pre">shablona.Model</span></code><a class="headerlink" href="#examples-using-shablona-model" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="Shablona contains a number of tools for fitting functions to data. This example shows us how to..."><div class="figure" id="id1">
+<img alt="../_images/sphx_glr_plot_function_fit_thumb.png" src="../_images/sphx_glr_plot_function_fit_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../auto_examples/model_fitting/plot_function_fit.html#sphx-glr-auto-examples-model-fitting-plot-function-fit-py"><span class="std std-ref">Fitting a function with shablona</span></a></span></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Next we'll show off another demonstration of model fitting with shablona. We'll generate a bunc..."><div class="figure" id="id2">
+<img alt="../_images/sphx_glr_plot_function_stability_thumb.png" src="../_images/sphx_glr_plot_function_stability_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../auto_examples/model_fitting/plot_function_stability.html#sphx-glr-auto-examples-model-fitting-plot-function-stability-py"><span class="std std-ref">Plotting model stability</span></a></span></p>
+</div>
+</div><div style='clear:both'></div></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">shablona.Model</a><ul>
+<li><a class="reference internal" href="#examples-using-shablona-model">Examples using <code class="docutils literal"><span class="pre">shablona.Model</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Ariel Rokem.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/gen_api/shablona.Model.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

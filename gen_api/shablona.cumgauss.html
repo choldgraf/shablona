@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>shablona.cumgauss &#8212; shablona 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="shablona.opt_err_func" href="shablona.opt_err_func.html" />
+    <link rel="prev" title="shablona.transform_data" href="shablona.transform_data.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="shablona-cumgauss">
+<h1>shablona.cumgauss<a class="headerlink" href="#shablona-cumgauss" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="shablona.cumgauss">
+<code class="descclassname">shablona.</code><code class="descname">cumgauss</code><span class="sig-paren">(</span><em>x</em>, <em>mu</em>, <em>sigma</em><span class="sig-paren">)</span><a class="headerlink" href="#shablona.cumgauss" title="Permalink to this definition">¶</a></dt>
+<dd><p>The cumulative Gaussian at x, for the distribution with mean mu and
+standard deviation sigma.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : float or array</p>
+<blockquote>
+<div><p>The values of x over which to evaluate the cumulative Gaussian function</p>
+</div></blockquote>
+<p><strong>mu</strong> : float</p>
+<blockquote>
+<div><p>The mean parameter. Determines the x value at which the y value is 0.5</p>
+</div></blockquote>
+<p><strong>sigma</strong> : float</p>
+<blockquote>
+<div><p>The variance parameter. Determines the slope of the curve at the point
+of Deflection</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>g</strong> : float or array</p>
+<blockquote class="last">
+<div><p>The cumulative gaussian with mean <span class="math">\(\mu\)</span> and variance <span class="math">\(\sigma\)</span>
+evaluated at all points in <cite>x</cite>.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>Based on:
+<a class="reference external" href="http://en.wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_function">http://en.wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_function</a></p>
+<p>The cumulative Gaussian function is defined as:</p>
+<div class="math">
+\[\Phi(x) = \frac{1}{2} [1 + erf(\frac{x}{\sqrt{2}})]\]</div>
+<p>Where, <span class="math">\(erf\)</span>, the error function is defined as:</p>
+<div class="math">
+\[erf(x) = \frac{1}{\sqrt{\pi}} \int_{-x}^{x} e^{t^2} dt\]</div>
+</dd></dl>
+
+<div style='clear:both'></div></div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Ariel Rokem.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/gen_api/shablona.cumgauss.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

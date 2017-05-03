@@ -1,0 +1,12 @@
+shablona.cumgauss
+=================
+
+.. currentmodule:: shablona
+
+.. autofunction:: cumgauss
+
+.. include:: shablona.cumgauss.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>
