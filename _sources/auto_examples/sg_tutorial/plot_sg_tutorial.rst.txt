@@ -170,7 +170,7 @@ some sample rST code.
 In the meantime, enjoy sphinx-gallery!
 
 
-**Total running time of the script:** ( 0 minutes  0.328 seconds)
+**Total running time of the script:** ( 0 minutes  0.602 seconds)
 
 
 
